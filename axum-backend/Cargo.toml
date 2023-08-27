@@ -1,0 +1,16 @@
+[package]
+name = "axum_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.15"
+tokio = { version = "1.0", features = ["full"] }
+sqlx = { version = "0.6.3", features = ["runtime-tokio-rustls", "any", "postgres", "macros", "chrono"] }
+chrono = { version = "0.4.24", features = ["serde"] }
+dotenv = "0.15.0"
+serde = "1.0.160"
+serde_json = "1.0.96"
+dotenv_codegen = "0.15.0"

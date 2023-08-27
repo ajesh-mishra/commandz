@@ -1,0 +1,4 @@
+{
+  "command_name": "docker 63qa exec -it sh",
+  "description": "Concat multiple files and display to standard output"
+}

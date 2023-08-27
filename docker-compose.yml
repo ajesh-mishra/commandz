@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: commandz-postgres 
+    image: postgres:15.2-alpine 
+    environment:
+      POSTGRES_USER: postgres 
+      POSTGRES_PASSWORD: postgres 
+      PGDATA: /data/postgres
+    volumes:
+       - /Users/ajesh/code/commandz/postgres-database:/data/postgres
+    ports:
+      - "5432:5432"
+
